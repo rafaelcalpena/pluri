@@ -20,6 +20,8 @@ Example
         Hello World!
     }
       
+
+For more useful modules, please check: [Useful Modules for Pluri](https://github.com/rafaelcalpena/pluri-useful-modules)
     
 
 Instalation
