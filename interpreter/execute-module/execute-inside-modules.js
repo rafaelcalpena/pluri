@@ -18,7 +18,7 @@ module.exports = function(injected){
 
                 instructions[i].input = firstInstruction.scope.join('\n'); //set inside argument for sub module
 
-                instructions[i].parentInput = firstInstruction.input;
+                instructions[i].parentInput = instructions[i].parentInput || firstInstruction.input;
 
                 nextInstructions.splice(i, 0, instructions[i]); //add submodule as the next instruction
             }

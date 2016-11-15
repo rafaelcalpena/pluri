@@ -1,8 +1,10 @@
 module.exports = function(depsCache, nextInstructions, callback, init){
 	return {
-	        evaluateNext: function(text) {
+	        evaluateNext: function(text, input, parentInput) {
 	            var instructions = depsCache.pluriParser.parse(text);
 	            for (var i = 0, j = instructions.length; i < j; i++) {
+	            	instructions[i].input = input;
+	            	instructions[i].parentInput = parentInput;
 	                nextInstructions.splice(i, 0, instructions[i]);
 	            }
 	        },
