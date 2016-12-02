@@ -1,4 +1,4 @@
-let pluriParser = require('../parser/pluri-parser.js');
+var pluriParser = require('../parser/pluri-parser.js');
 
 module.exports = function(init){
 	return function(data) {
